@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{% block title %}View Users{% endblock %}
+{% block content %}
+    {% for item in values %}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                    <h5 class="card-title">User ID: {{item.id}}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">User Name: {{item.name}}</h6>
+                    <p class="card-text">User Email: {{item.email}}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
